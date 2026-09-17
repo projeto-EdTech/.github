@@ -1,0 +1,80 @@
+name: 🐛 Bug Report
+description: Reportar um comportamento inesperado ou quebrado na plataforma
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um problema! Preencha o máximo de campos possível — isso acelera muito o diagnóstico.
+
+  - type: dropdown
+    id: repositorio
+    attributes:
+      label: Repositório afetado
+      description: Em qual repositório da organização o bug ocorre?
+      options:
+        - frontend
+        - backend
+        - IA
+        - APPS
+        - docs
+        - Outro / não sei
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o bug de forma clara e objetiva.
+      placeholder: Ex.: Ao enviar o simulado, a tela de resultado fica em branco.
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer em vez disso?
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Liste o passo a passo para reproduzir o problema.
+      placeholder: |
+        1. Acesse '...'
+        2. Clique em '...'
+        3. Veja o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Prints, logs ou vídeos
+      description: Se possível, anexe capturas de tela, logs de console/servidor ou um vídeo curto.
+    validations:
+      required: false
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Navegador/SO, versão do Node/Java, dispositivo, etc.
+      placeholder: Ex.: Chrome 128, Windows 11, Node 20
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checagens
+    attributes:
+      label: Checagens
+      options:
+        - label: Verifiquei que não existe uma Issue aberta reportando o mesmo problema
+          required: true
+        - label: Consigo reproduzir esse bug de forma consistente
+          required: false
