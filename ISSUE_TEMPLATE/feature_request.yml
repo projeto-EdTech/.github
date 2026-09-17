@@ -1,0 +1,65 @@
+name: ✨ Feature Request
+description: Sugerir uma nova funcionalidade ou melhoria para o Vestibuline
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pela sugestão! Para nos ajudar a avaliar se ela se encaixa na direção do produto, explique o **problema** que ela resolve, não só a solução proposta.
+
+  - type: dropdown
+    id: repositorio
+    attributes:
+      label: Repositório relacionado
+      description: A qual repositório essa sugestão está mais relacionada?
+      options:
+        - frontend
+        - backend
+        - IA
+        - APPS
+        - docs
+        - Múltiplos / não sei
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema essa funcionalidade resolve?
+      description: Descreva a dificuldade ou limitação atual que motivou o pedido.
+      placeholder: Ex.: Hoje não há como comparar o desempenho entre dois simulados diferentes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução proposta
+      description: Como você imagina que isso deveria funcionar?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: Você pensou em outras formas de resolver o mesmo problema?
+    validations:
+      required: false
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: Prints, links de referência, exemplos de outros produtos, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checagens
+    attributes:
+      label: Checagens
+      options:
+        - label: Verifiquei que não existe uma Issue aberta com a mesma sugestão
+          required: true
