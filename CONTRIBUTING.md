@@ -17,9 +17,8 @@ O Vestibuline é dividido em repositórios por camada:
 | Repositório | Stack | O que é |
 |---|---|---|
 | `frontend` | Next.js + React + TypeScript + TailwindCSS | Interface do aluno |
-| `backend` | Java | BFF e regras de domínio |
-| `backend_calculo_desempenho` | — | Motor de cálculo de desempenho |
-| `IA` | — | Processamento de documentos e integração com IA (Gemini) |
+| `backend` | Java | BFF, regras de domínio e motor de cálculo de desempenho |
+| `IA` | Node.js + Google Gemini | Processamento de documentos e integração com IA |
 | `APPS` | — | Apps auxiliares do ecossistema |
 | `docs` | — | Documentação geral do projeto |
 
@@ -48,7 +47,7 @@ Vários fluxos (ex.: VestIA, integração Planner ↔ desempenho) ainda estão e
 
 ## Reportando bugs
 
-Abra uma *Issue* usando o template de bug (quando disponível) e inclua:
+Abra uma *Issue* usando o template de bug (`🐛 Bug Report`) e inclua:
 - Passos para reproduzir
 - Comportamento esperado vs. observado
 - Ambiente (navegador, SO, versão do Node/Java, etc.)
@@ -56,7 +55,7 @@ Abra uma *Issue* usando o template de bug (quando disponível) e inclua:
 
 ## Sugerindo melhorias
 
-Abra uma *Issue* explicando o problema que a melhoria resolve, não só a solução — isso ajuda a avaliar se ela se encaixa na direção do produto.
+Abra uma *Issue* usando o template de sugestão (`✨ Feature Request`) explicando o problema que a melhoria resolve, não só a solução — isso ajuda a avaliar se ela se encaixa na direção do produto.
 
 ## Dúvidas
 
