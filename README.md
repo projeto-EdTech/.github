@@ -45,8 +45,7 @@ Planner de estudos automatizado, consultor de notas de corte, e curadoria de que
 | Repositório | O que é |
 |---|---|
 | [`frontend`](https://github.com/projeto-EdTech/frontend) | Interface do aluno |
-| [`backend`](https://github.com/projeto-EdTech/backend) | BFF e regras de domínio |
-| [`backend_calculo_desempenho`](https://github.com/projeto-EdTech/backend_calculo_desempenho) | Motor de cálculo de desempenho |
+| [`backend`](https://github.com/projeto-EdTech/backend) | BFF, regras de domínio e motor de cálculo de desempenho |
 | [`IA`](https://github.com/projeto-EdTech/IA) | Processamento de documentos e integração com IA |
 | [`APPS`](https://github.com/projeto-EdTech/APPS) | Apps auxiliares do ecossistema |
 | [`docs`](https://github.com/projeto-EdTech/docs) | Documentação geral do projeto |
